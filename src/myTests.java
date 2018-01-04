@@ -10,12 +10,12 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class myTests implements Runnable{
-   /* private static final String USERNAME = "eyalk";
-    private static final String PASSWORD = "Experitest2012";*/
+    private static final String USERNAME = "eyalk";
+    private static final String PASSWORD = "Experitest2012";
     private static final String PROJECT = "Default";
-    private static final String ACCESSKEY = "eyJ4cC51Ijo4NSwieHAucCI6MiwieHAubSI6Ik1BIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4Mjg5NDU4MjksImlzcyI6ImNvbS5leHBlcml0ZXN0In0.NJ0DFLOdtLvkhz6NPPNtRu2GZFLwhCprzeohEyd3FZY";
-    String CLOUDURL = "https://sales.experitest.com/wd/hub/";
-    //String CLOUDURL = "https://qacloud.experitest.com/wd/hub";
+    //private static final String ACCESSKEY = "eyJ4cC51Ijo4NSwieHAucCI6MiwieHAubSI6Ik1BIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4Mjg5NDU4MjksImlzcyI6ImNvbS5leHBlcml0ZXN0In0.NJ0DFLOdtLvkhz6NPPNtRu2GZFLwhCprzeohEyd3FZY";
+   // String CLOUDURL = "https://sales.experitest.com/wd/hub/";
+    String CLOUDURL = "https://qacloud.experitest.com/wd/hub";
    // String CLOUDURL = "192.168.2.135/wd/hub";
     PlatformType platform;
     String testName;
@@ -76,10 +76,10 @@ public class myTests implements Runnable{
             dc.setCapability("platformName", "ios");
         }
         //Set Grid capabilities
-       /* dc.setCapability("user", USERNAME);
-        dc.setCapability("password", PASSWORD);*/
+        dc.setCapability("user", USERNAME);
+        dc.setCapability("password", PASSWORD);
         dc.setCapability("project", PROJECT);
-        dc.setCapability("accessKey", ACCESSKEY);
+      //  dc.setCapability("accessKey", ACCESSKEY);
         
         dc.setCapability("generateReport", generateReport);
         dc.setCapability("testName", testName);
